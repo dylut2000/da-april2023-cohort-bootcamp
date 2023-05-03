@@ -1,0 +1,13 @@
+<div>
+  <app-slider></app-slider>
+
+  <div class="px-16">
+    <app-seach></app-seach>
+  </div>
+
+  <div class="grid sm:px-4 md:px-16 sm:grid-cols-2 md:grid-cols-4 gap-8">
+    <div *ngFor="let product of products">
+      <app-product-card [product]='product'></app-product-card>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="card w-full bg-base-100 shadow-xl">
+  <figure>
+    <img
+      [src]="product?.thumbnail"
+      alt="Shoes"
+      class="h-60 w-full object-cover"
+    />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">
+      {{ product?.category }}
+      <div class="badge badge-secondary">
+        {{ product?.discountPercentage }}%
+      </div>
+    </h2>
+    <p>{{ product?.title }}</p>
+    <div class="card-actions flex justify-end items-center gap-4">
+      <div class="badge badge-outline">{{ product?.brand }}</div>
+      <i class="bi bi-eye"></i>
+
+      <i class="bi bi-cart-plus" (click)="addToCard()"></i>
+    </div>
+  </div>
+</div>

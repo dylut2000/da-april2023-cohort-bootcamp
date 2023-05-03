@@ -1,0 +1,10 @@
+.card i {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: ease-in-out .5s;
+}
+
+.card i:hover {
+    transform: scale(1.5);
+  }
+  
