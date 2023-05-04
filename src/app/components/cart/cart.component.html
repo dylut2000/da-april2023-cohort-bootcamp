@@ -1,0 +1,23 @@
+<div
+  tabindex="0"
+  class="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow"
+>
+  <div class="card-body">
+    <span class="font-bold text-lg"
+      >{{ cartService.cartProducts.length }} Items</span
+    >
+    <div class="flex flex-col">
+      <app-cart-item
+        *ngFor="let product of cartService.cartProducts"
+        [product]="product"
+      ></app-cart-item>
+    </div>
+
+    <span class="text-info text-right"
+      >Subtotal: {{ cartService.getTotal() | currency : "R" }}</span
+    >
+    <div class="card-actions">
+      <button class="btn btn-primary btn-block">Checkout</button>
+    </div>
+  </div>
+</div>
