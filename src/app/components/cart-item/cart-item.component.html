@@ -1,5 +1,5 @@
 <div
-  class="flex items-center justify-between pl-1 pr-2 py-2 rounded-xl hover:bg-base-300 cursor-pointer"
+  class="flex items-center gap-4 justify-between pl-1 pr-2 py-2 rounded-xl hover:bg-base-300 cursor-pointer"
   (click)="removeFromCard()"
 >
   <img
@@ -8,7 +8,7 @@
     alt=""
   />
   <div class="flex flex-col justify-end">
-    <div class="text-[0.6rem]">{{ product?.title }}</div>
+    <div class="text-[0.6rem] text-right">{{ product?.title }}</div>
     <div class="font-bold text-right">R{{ product?.price }}</div>
   </div>
 </div>

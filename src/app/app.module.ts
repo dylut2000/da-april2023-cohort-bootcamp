@@ -14,9 +14,10 @@ import { SliderComponent } from './components/slider/slider.component';
 import { SeachComponent } from './components/seach/seach.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { CartItemComponent } from './components/cart-item/cart-item.component';
+import { CartComponent } from './components/cart/cart.component';
 
 @NgModule({
-  declarations: [AppComponent, HomePageComponent, ProductPageComponent, CheckoutPageComponent, LoginPageComponent, RegisterPageComponent, HeaderComponent, SliderComponent, SeachComponent, ProductCardComponent, CartItemComponent],
+  declarations: [AppComponent, HomePageComponent, ProductPageComponent, CheckoutPageComponent, LoginPageComponent, RegisterPageComponent, HeaderComponent, SliderComponent, SeachComponent, ProductCardComponent, CartItemComponent, CartComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
